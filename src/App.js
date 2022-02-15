@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+/* eslint-disable react/jsx-no-undef */
 import './App.css';
+//import LandingScreen from './Component/LandingScreen';
+import Login from './login';
+import Navbar from './Component/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className='App'>
+      <Navbar title="Travelgram.com" />
+     <BrowserRouter>
+      <Route path="/login" exact component={Login} />
+      {/* <Route path="/" exact component={LandingScreen}/> */}
+      </BrowserRouter>
+      </div>    
   );
+
 }
 
 export default App;
