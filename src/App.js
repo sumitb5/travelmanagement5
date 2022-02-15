@@ -5,6 +5,7 @@ import Login from './login';
 import Navbar from './Component/Navbar';
 import About from "./webpages/about";
 import Contact from "./webpages/contact";
+import Home from "./webpages/home";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/login' exact component={Login} />
         <Route path='/about' exact component={About} />
         <Route path='/contact' exact component={Contact} />
+        <Route path='/home' exact component={Home} />
       </BrowserRouter>
     </div>
   );

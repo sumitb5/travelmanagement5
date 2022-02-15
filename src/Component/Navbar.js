@@ -5,7 +5,7 @@ export default function Navbar(props) {
         <nav className="navbar navbar-dark bg-primary">
             <div class="container-fluid">
                 {/* <img src="/src/TRAVEL.jpg" alt="" width="40" height="30" class="d-inline-block align-text-top" /> */}
-                <a class="navbar-brand" href="/">{props.title}</a>
+                <a class="navbar-brand" href="/home">{props.title}</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -13,7 +13,7 @@ export default function Navbar(props) {
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
+                            <a class="nav-link" href="/home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/login">Login</a>
@@ -41,6 +41,5 @@ export default function Navbar(props) {
                 </div>
             </div>
         </nav>
-        
     );
 }
