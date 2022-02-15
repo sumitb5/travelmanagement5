@@ -4,6 +4,7 @@ import './App.css';
 import Login from './login';
 import Navbar from './Component/Navbar';
 import About from "./webpages/about";
+import Contact from "./webpages/contact";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Route path='/login' exact component={Login} />
         <Route path='/about' exact component={About} />
+        <Route path='/contact' exact component={Contact} />
       </BrowserRouter>
     </div>
   );
