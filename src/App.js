@@ -1,4 +1,4 @@
-import { BrowserRouter, Route} from "react-router-dom";
+import { BrowserRouter, Route} from "react-router-dom";g
 import './App.css';
 //import LandingScreen from './Component/LandingScreen';
 import Login from './login';
